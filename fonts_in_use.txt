@@ -1,0 +1,19 @@
+Fonts actively used in this project
+-----------------------------------
+
+
+Font name       :   Georgia W01 Regular
+Font provider   :   fonts.com
+
+******************************************************************************
+
+Font name       :   Helvetica Neue eText Pr1255995
+Font provider   :   fonts.com
+
+******************************************************************************
+
+
+
+
+
+Created by Typecast on 2015/05/27.
