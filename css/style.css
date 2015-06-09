@@ -4,6 +4,9 @@ body {
 	 font-family: "Georgia W01 Regular";
 	 color: #444;
 	 padding: 0 0 50px;
+	 background-image: url("../media/invisible-ink.jpg");
+	 background-repeat: no-repeat;
+	 background-position: -650px 0%;
 }
 
 p {
@@ -132,7 +135,7 @@ a.a-sup {
 
 header {
 	 text-align: center;
-	 background: #DAF2C2;
+	 background-color: rgba(26, 165, 131, 0.75);
 	 padding: 4em 0;
 }
 
