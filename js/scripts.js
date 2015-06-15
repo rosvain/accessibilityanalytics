@@ -40,4 +40,9 @@
 
 
 //STORE ANALYTICS DATA
-//Collect and store data so that it can be represented in an administrative interface for the user to analyze
+//collect and store data so that it can be represented in an administrative interface for the user to analyze
+
+
+//DETECT IF CSS DISABLED
+//identify if the user has disabled CSS presentation layer for legibility
+
