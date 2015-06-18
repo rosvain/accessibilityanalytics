@@ -1,13 +1,21 @@
 //DETECT FONT RE-SIZE
 //vision impaired 
 //Identify if user increases default font text sizes in order to increase legibility
-
-
-
+var originalWidth = $( window ).width();
+console.log(originalWidth);
+$( window ).resize(function() {
+  var resizedWidth = $( window ).width(); 
+    console.log(resizedWidth);
+  if (originalWidth !== resizedWidth){
+  console.log("Window was zoomed");
+  }
+}); 
 //DETECT SCREEN RE-SIZE
 //vision repaired
 //identify if user modifies the screen size to increase legibility
- 
+$( window ).resize(function() {
+  console.log("Window was resized");
+}); 
 
 
 //DETECT FOR HIGH CONTRAST MODE
