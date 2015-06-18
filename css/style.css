@@ -1,210 +1,154 @@
-body {
-	 font-size: 1em;
-	 line-height: 1.5em;
-	 font-family: "Georgia W01 Regular";
-	 color: #444;
-	 padding: 0 0 50px;
-	 background-image: url("../media/invisible-ink.jpg");
-	 background-repeat: no-repeat;
-	 background-position: -650px 0%;
-}
+/* ACCESSIBILITY ANALYTICS - Developed by Mikal Morello and Ramiro Oliva */
 
-p {
-	 font-size: 1.25em;
-	 line-height: 1.6em;
-	 margin: 0 0 1.6em 0;
-}
 
-h1 {
-	 font-family: "Helvetica Neue eText Pr1255995";
-	 font-size: 2.5em;
-	 line-height: 1.095em;
-	 margin: 0.762em -100px;
-}
+/* GENERAL */
 
-h2 {
-	 font-family: "Helvetica Neue eText Pr1255995";
-	 font-size: 2em;
-	 line-height: 1.188em;
-	 margin: 2em 0 0.5em 0;
-}
+  html, body {
+	overflow-x: hidden;
+  }
+  
+  body {
+	   font-size: 1em;
+	   line-height: 1.5em;
+	   font-family: "Georgia W01 Regular";
+	   color: #444;
+	   padding: 0 0 50px;
+	   background-image: url("../media/invisible-ink.jpg");
+	   background-repeat: no-repeat;
+	   background-position: -650px 0%; 
+  }
+  
+  p {
+	   font-size: 1.25em;
+	   line-height: 1.6em;
+	   margin: 0 0 1.6em 0;
+  }
+  
+  blockquote {
+	   margin: 3em 0 3em 4em;
+  }
+  
+  p.quote {
+	   font-family: "Georgia W01 Italic";
+	   line-height: 1.7;
+  }
+  
+  blockquote.pquote {
+	   text-align: center;
+	   margin: 3em -100px;
+  }
+  
 
-h3 {
-	 font-family: "Helvetica Neue eText Pr1255995";
-	 font-size: 1.625em;
-	 line-height: 1.231em;
-	 margin: 2.462em 0 0.615em 0;
-}
-
-ul {
-	 font-size: 1.25em;
-	 line-height: 1.6;
-	 margin: 0 0 1.6em 3.2em;
-	 list-style: disc outside;
-}
-
-ul.level2 {
-	 font-size: 1em;
-	 margin-left: 1.75em;
-	 list-style-type: circle;
-}
-
-ol {
-	 font-size: 1.25em;
-	 line-height: 1.6em;
-	 margin: 0 0 1.6em 3.2em;
-	 list-style: decimal outside;
-}
-
-blockquote {
-	 margin: 3em 0 3em 4em;
-}
-
-p.quote {
-	 font-family: "Georgia W01 Italic";
-	 line-height: 1.7;
-}
-
-blockquote.pquote {
-	 text-align: center;
-	 margin: 3em -100px;
-}
-
-p.pquote {
-	 font-size: 1.625em;
-	 line-height: 1.667em;
-}
-
-a {
-	 color: #444;
+  
+  a {
+	   color: #444;
+	   text-decoration: none;
+	   border-bottom: 1px solid #000;
+	   cursor: pointer;
+  }
+  
+  a:visited {
+	   color: #444;
+	   text-decoration: none;
+	   border-bottom: 1px solid #000;
+  }
+  
+  a:hover {
+	   border-bottom: none;
+  }
+  
+  a:active {
+	   border-bottom: none;
+  }
+  
+  a:focus {
+	   border-bottom: none;
+  }
+  
+  a.inactive {
+	 color: rgba(136, 136, 136, 1);
 	 text-decoration: none;
-	 border-bottom: 1px solid #000;
-	 cursor: pointer;
-}
-
-a:visited {
-	 color: #444;
-	 text-decoration: none;
-	 border-bottom: 1px solid #000;
-}
-
-a:hover {
-	 border-bottom: none;
-}
-
-a:active {
-	 border-bottom: none;
-}
-
-a:focus {
-	 border-bottom: none;
-}
-
-em {
-	 font-style: italic;
-}
-
-strong {
-	 font-family: "Georgia W01 Bold";
-}
-
-small {
-	 font-size: 75%;
-}
-
-sub {
-	 font-size: 75%;
-	 line-height: 0;
-	 position: relative;
-	 vertical-align: baseline;
-}
-
-sup {
-	 font-size: 75%;
-	 line-height: 0;
-	 position: relative;
-	 vertical-align: baseline;
-	 top: -0.5em;
-}
-
-a.a-sup {
 	 border: none;
-}
+  }
+  
+  a.active {
+	   color: rgba(255, 255, 255, 1);
+	   text-decoration: none;
+	   border: none;
+  }
+  
+  
+  
+  a.a-sup {
+	   border: none;
+  }
 
-header {
-	 text-align: center;
-	 background-color: rgba(26, 165, 131, 0.75);
-	 padding: 4em 0;
-}
 
-p.header {
-	 font-family: "Helvetica Neue eText Pro";
-	 font-size: 0.875em;
-	 line-height: 1em;
-	 margin: 0;
-}
+/* LAYOUT */
 
-span.author {
-	 text-transform: uppercase;
-}
+  section.main {
+	   width: 72.92%;
+  }
+  
+  article.main {
+	   width: 67.321%;
+	   /*width: 100%;
+	   padding: auto 16.3395%;*/
+  }
+  
+  article {
+	   margin: 0 auto;
+  }
+  
+  section {
+	   margin: 0 auto;
+  }
+  
+  header {
+	   /*text-align: center;
+	   background-color: rgba(26, 165, 131, 0.75);
+	   padding: 4em 0;*/
+  }
+  
+  .article-heading:before {
+	  content: "";
+	  position: absolute;
+	  z-index: -1; /* behind parent */
+	  top: 0;
+	  bottom: 0;
+	  /* subtract h2 padding (1.5rem) */
+	  left: 598.5rem;
+	  right: 598.5rem;
+	  background: green;
+  }
+  
+  .article-heading {
+	  text-align: center;
+	  background-color: rgba(26, 165, 131, 0.75);
+	  padding: 4em 13.54%;
+	  position: relative;
+  }
 
-h2.header {
-	 font-size: 1.1em;
-	 line-height: 1.6em;
-	 border-top: 1px solid #444;
-	 padding-top: 0.8em;
-	 margin: 0;
-	 font-family: "Helvetica Neue eText Pro";
-}
 
-p.first-paragraph {
-	 font-size: 1.625em;
-	 line-height: 1.462em;
-	 margin: 2.462em 0 1.846em 0;
-}
 
-span.first-letter {
-	 float: left;
-	 font-size: 4.385em;
-	 line-height: 1em;
-	 margin: 0 0.228em 0 0;
-}
 
-ol.footnote-list {
-	 font-size: 1.125em;
-	 line-height: 1.778em;
-	 margin: 0 0 1.778em 0;
-}
-
-p.comment {
-	 font-size: 1.125em;
-	 line-height: 1.778em;
-	 margin: 0 0 1.778em 0;
-}
-
-p.comment-options {
-	 font-family: "Helvetica Neue eText Pro";
-	 font-size: 1.25em;
-	 line-height: 1.6em;
-	 margin: 0 0 2.4em 0;
-}
-
-ul.comment-list {
-	 list-style: none;
-	 font-size: 1em;
-	 line-height: 1em;
-	 margin: 0 0 8em 0;
-}
-
-article {
-	 margin: 0 auto;
-}
-
-section {
-	 margin: 0 auto;
-}
-
-span.hr {
+/* COMPONENTS */
+  nav {
+	   margin: 0 auto;
+	   text-align: center;
+  }
+  
+  nav.blog {
+	   background-color: rgba(68, 68, 68, 1);
+	   margin: 0px;
+	   padding: 1em 0px;
+  }
+  
+  ul.nav {
+	   margin: 0px auto;
+  }
+  
+  span.hr {
 	 display: block;
 	 width: 14%;
 	 margin: 4em auto;
@@ -212,125 +156,260 @@ span.hr {
 	 border-top: 1px solid #444;
 	 text-indent: -9999em;
 	 height: 1px;
-}
-
-div.figure {
-	 margin: 3em -100px;
-	 text-align: center;
-}
-
-p.caption {
-	 font-family: "Helvetica Neue eText Pr1255988";
-	 text-align: center;
-	 font-size: 0.875em;
-	 line-height: 1em;
-	 margin-top: 1.143em;
-	 color: #ccc;
-	 margin-bottom: 0;
-}
-
-span.heading-small {
-	 font-weight: normal;
-	 font-size: 0.538em;
-	 margin-left: 0.5em;
-}
-
-li.a-comment {
-	 border-top: 1px solid #ccc;
-	 padding: 2em 0 0 0;
-	 margin: 3em 0 0 0;
-}
-
-h3.comment-header {
-	 margin-top: 0;
-	 font-family: "Helvetica Neue eText Pro";
-}
-
-nav {
-	 margin: 0 auto;
-	 text-align: center;
-}
-
-nav.blog {
-	 background-color: rgba(68, 68, 68, 1);
-	 margin: 0px;
-	 padding: 1em 0px;
-}
-
-ul.nav {
-	 margin: 0px auto;
-}
-
-a.inactive {
-	 color: rgba(136, 136, 136, 1);
-	 text-decoration: none;
-	 border: none;
-}
-
-a.active {
-	 color: rgba(255, 255, 255, 1);
-	 text-decoration: none;
-	 border: none;
-}
-
-nav.blog:after {
+  }
+  
+  div.figure {
+	   margin: 3em -100px;
+	   text-align: center;
+  }
+  
+  nav.blog:after {
 	 content: " ";
 	 display: table;
 	 clear: both;
-}
-
-nav.blog:before {
-	 content: " ";
-	 display: table;
-}
-
-li.nav {
-	 margin: 0px 1em 0px 1em;
-	 font-family: "Helvetica Neue eText Pro";
-	 font-size: 14px;
-	 text-transform: uppercase;
-	 letter-spacing: 2px;
-	 display: inline-block;
-}
-
-img.main {
-	 width: auto;
-	 max-width: 100%;
-	 vertical-align: top;
-	 height: auto;
-	 margin: 0;
-}
-
-img {
-	 max-width: 100%;
-}
-
-.white-gradient {
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(54%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-
-background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* Opera 12+ */
-
-background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* IE10+ */
-
-background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* W3C */
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+  
+  nav.blog:before {
+	   content: " ";
+	   display: table;
+  }
+  
+  li.nav {
+	   margin: 0px 1em 0px 1em;
+	   font-family: "Helvetica Neue eText Pro";
+	   font-size: 14px;
+	   text-transform: uppercase;
+	   letter-spacing: 2px;
+	   display: inline-block;
+  }
+  
+  img.main {
+	   width: auto;
+	   max-width: 100%;
+	   vertical-align: top;
+	   height: auto;
+	   margin: 0;
+  }
+  
+  img {
+	   max-width: 100%;
+  }
 
 
+/* TYPOGRAPHY */
 
-}
+  h1 {
+	   font-family: "Helvetica Neue eText Pr1255995";
+	   font-size: 2.5em;
+	   line-height: 1.095em;
+	   margin: 0.762em -100px;
+  }
+  
+  h2 {
+	   font-family: "Helvetica Neue eText Pr1255995";
+	   font-size: 2em;
+	   line-height: 1.188em;
+	   margin: 2em 0 0.5em 0;
+  }
+  
+  h3 {
+	   font-family: "Helvetica Neue eText Pr1255995";
+	   font-size: 1.625em;
+	   line-height: 1.231em;
+	   margin: 2.462em 0 0.615em 0;
+  }
+  
+  h4 {
+	   font-family: "Helvetica Neue eText Pr1255995";
+	   font-size: 1.425em;
+	   line-height: 1.231em;
+	   margin: 2.462em 0 0.615em 0;
+  }
+  
+  h5 {
+	   font-family: "Helvetica Neue eText Pr1255995";
+	   font-size: 1.225em;
+	   line-height: 1.231em;
+	   margin: 2.462em 0 0.615em 0;
+  }
+  
+  h6 {
+	   font-family: "Helvetica Neue eText Pr1255995";
+	   font-size: 1em;
+	   line-height: 1.231em;
+	   margin: 2.462em 0 0.615em 0;
+  }
+  
+  ul {
+	   font-size: 1.25em;
+	   line-height: 1.6;
+	   margin: 0 0 1.6em 3.2em;
+	   list-style: disc outside;
+  }
+  
+  ul.level2 {
+	   font-size: 1em;
+	   margin-left: 1.75em;
+	   list-style-type: circle;
+  }
+  
+  ol {
+	   font-size: 1.25em;
+	   line-height: 1.6em;
+	   margin: 0 0 1.6em 3.2em;
+	   list-style: decimal outside;
+  }
+  
+  em {
+	   font-style: italic;
+  }
+  
+  strong {
+	   font-family: "Georgia W01 Bold";
+  }
+  
+  small {
+	   font-size: 75%;
+  }
+  
+  sub {
+	   font-size: 75%;
+	   line-height: 0;
+	   position: relative;
+	   vertical-align: baseline;
+  }
+  
+  sup {
+	   font-size: 75%;
+	   line-height: 0;
+	   position: relative;
+	   vertical-align: baseline;
+	   top: -0.5em;
+  }
+  
+  p.header {
+	   font-family: "Helvetica Neue eText Pro";
+	   font-size: 0.875em;
+	   line-height: 1em;
+	   margin: 0;
+  }
+  
+  span.author {
+	   text-transform: uppercase;
+  }
+  
+  h2.header {
+	   font-size: 1.1em;
+	   line-height: 1.6em;
+	   border-top: 1px solid #444;
+	   padding-top: 0.8em;
+	   margin: 0;
+	   font-family: "Helvetica Neue eText Pro";
+  }
+  
+  p.first-paragraph {
+	   font-size: 1.625em;
+	   line-height: 1.462em;
+	   margin: 2.462em 0 1.846em 0;
+  }
+  
+  span.first-letter {
+	   float: left;
+	   font-size: 4.385em;
+	   line-height: 1em;
+	   margin: 0 0.228em 0 0;
+  }
+  
+  ol.footnote-list {
+	   font-size: 1.125em;
+	   line-height: 1.778em;
+	   margin: 0 0 1.778em 0;
+  }
+  
+  p.comment {
+	   font-size: 1.125em;
+	   line-height: 1.778em;
+	   margin: 0 0 1.778em 0;
+  }
+  
+  p.comment-options {
+	   font-family: "Helvetica Neue eText Pro";
+	   font-size: 1.25em;
+	   line-height: 1.6em;
+	   margin: 0 0 2.4em 0;
+  }
+  
+  p.pquote {
+	   font-size: 1.625em;
+	   line-height: 1.667em;
+  }
+  
+  ul.comment-list {
+	   list-style: none;
+	   font-size: 1em;
+	   line-height: 1em;
+	   margin: 0 0 8em 0;
+  }
 
-section.main {
-	 width: 72.92%;
-}
+  p.caption {
+	   font-family: "Helvetica Neue eText Pr1255988";
+	   text-align: center;
+	   font-size: 0.875em;
+	   line-height: 1em;
+	   margin-top: 1.143em;
+	   color: #ccc;
+	   margin-bottom: 0;
+  }
+  
+  span.heading-small {
+	   font-weight: normal;
+	   font-size: 0.538em;
+	   margin-left: 0.5em;
+  }
 
-article.main {
-	 width: 67.321%;
-}
+  li.a-comment {
+	   border-top: 1px solid #ccc;
+	   padding: 2em 0 0 0;
+	   margin: 3em 0 0 0;
+  }
+  
+  h3.comment-header {
+	   margin-top: 0;
+	   font-family: "Helvetica Neue eText Pro";
+  }
+
+
+/* OTHER */
+  .white-gradient {
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%, rgba(255,255,255,0) 100%); /* FF3.6+ */ 
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(54%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */	
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */	
+	background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* Opera 12+ */	
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* IE10+ */	
+	background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+  }
+
+
+
+/* ACCESSIBILITY */
+
+  .skip {
+	  position:absolute;
+	  left:-10000px;
+	  top:auto;
+	  width:1px;
+	  height:1px;
+	  overflow:hidden;
+  }
+   
+  .skip:focus {
+	  position:static;
+	  width:auto;
+	  height:auto;
+  } 
+
+/*  MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
 	 article.main {
@@ -402,20 +481,3 @@ h3.comment-header {
 
 } 
 
-/* ACCESSIBILITY UPDATES */
-.skip 
-{
-position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
-}
- 
-.skip:focus
-{
-position:static;
-width:auto;
-height:auto;
-} 
