@@ -44,8 +44,30 @@ $( window ).resize(function() {
 //vision impaired
 //identify if the primary means of navigating the page is through the keyboard or mouse
 //identify the types of keyboard interactions and track onfocus events to indiciate if accessibility tools are being used
-
-
+// Log all keyboard interactions
+	var keyCount = 0;
+	$(document).keypress(function(event) {
+	  console.log(event.key);
+	  keyCount++
+	  console.log("Key Count:"+" "+keyCount);
+	});
+// Log all click interactions
+    var clickCount = 0;
+	$(document).click(function(event) {
+	  console.log(event.type);
+	  clickCount++
+	  console.log("Click Count:"+" "+clickCount);
+	});
+// Compare key count vs click count
+	var compareInteractions = function(){
+		if(keyCount > clickCount){
+			console.log("User interacting primarily through keyboard interactions ");
+		} else if (keyCount < clickCount){
+			console.log("User interacting primarily through mouse interactions ");
+		} else {
+			console.log("Undetermined or equal");
+		}
+	}
 
 //STORE ANALYTICS DATA
 //collect and store data so that it can be represented in an administrative interface for the user to analyze
