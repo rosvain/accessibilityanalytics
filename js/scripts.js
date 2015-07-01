@@ -1,6 +1,32 @@
 //DETECT FONT RE-SIZE
 //vision impaired 
 //Identify if user increases default font text sizes in order to increase legibility
+
+$(document).ready(function() {
+  initialSize = $("body").css("font-size"); 
+  console.log("Initial font size:"+" "+initialSize);
+  checkSize(); 
+});
+
+function checkSize() {
+  var currentSize = $("body").css("font-size"); 
+  if (currentSize != initialSize) {
+    initialSize = currentSize;
+	console.log("Modified font size:"+" "+currentSize);
+  }
+ 
+  timer(); 
+}
+
+function timer() {
+  var myTimer = setTimeout('checkSize()', 1000); // Obviously we need a better way of running this, maybe on a height change?
+}
+
+
+//DETECT SCREEN RE-SIZE
+//vision repaired
+//identify if user modifies the screen size to increase legibility
+
 var originalWidth = $( window ).width();
 console.log(originalWidth);
 $( window ).resize(function() {
@@ -10,9 +36,8 @@ $( window ).resize(function() {
   console.log("Window was zoomed");
   }
 }); 
-//DETECT SCREEN RE-SIZE
-//vision repaired
-//identify if user modifies the screen size to increase legibility
+
+
 $( window ).resize(function() {
   console.log("Window was resized");
 }); 
@@ -76,7 +101,7 @@ $( window ).resize(function() {
 	});
 	
 // Compare key count vs click count
-		var compareInteractions = $(document).ready(function(){
+	var compareInteractions = $(document).ready(function(){
 		if(keyCount > clickCount){
 			console.log("User interacting primarily through keyboard interactions ");
 		} else if (keyCount < clickCount){
