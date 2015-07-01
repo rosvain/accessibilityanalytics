@@ -78,8 +78,24 @@ $( window ).resize(function() {
 //identify if the primary means of navigating the page is through the keyboard or mouse
 
 //identify the types of keyboard interactions and track onfocus events to indiciate if accessibility tools are being used
-	//var focus = $("..").is(":focus");
-	//console.log(focus);
+
+
+
+  var initialFocus= document.activeElement; 
+  console.log("Initial focus:"+" "+initialFocus);
+  
+  $(document).keypress(function(event) {
+	  var currentFocus = document.activeElement; 
+	  console.log("Current focus:"+" "+currentFocus);
+  });
+  
+  $(document).click(function(event) {
+	  var currentFocus = document.activeElement; 
+	  console.log("Current focus:"+" "+currentFocus);
+  });
+
+
+
 
 // Log all keyboard interactions (will have to detect input fields first)
     var hasInput = ($(document).has("input").length ? "Yes" : "No" );
@@ -101,15 +117,15 @@ $( window ).resize(function() {
 	});
 	
 // Compare key count vs click count
-	var compareInteractions = $(document).ready(function(){
+	function compareInteractions() {
 		if(keyCount > clickCount){
 			console.log("User interacting primarily through keyboard interactions ");
 		} else if (keyCount < clickCount){
 			console.log("User interacting primarily through mouse interactions ");
 		} else {
 			console.log("User interactions undetermined or equal");
-		}
-	});
+		}};
+
 	
 
 //STORE ANALYTICS DATA

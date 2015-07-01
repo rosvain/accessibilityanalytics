@@ -57,12 +57,12 @@
 	   border-bottom: none;
   }
   
-  a:active {
-	   border-bottom: none;
+  a:active, *:active {
+	  background: #0FC;
   }
   
-  a:focus {
-	   border-bottom: none;
+  a:focus, *:focus {
+	  background: #0FC;
   }
   
   a.inactive {
