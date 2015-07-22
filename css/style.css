@@ -93,13 +93,14 @@
 
 /* LAYOUT */
 
-  section .container {
+  .article-heading .container {
 	   width: 72.92%;
 	   margin: 0 auto;
   }
   
   article .container {
-	   width: 67.321%;
+	   /*width: 67.321%;*/
+	   width: 50%;
 	   margin: 0 auto;
 	  
   }
@@ -111,26 +112,7 @@
   section {
 	   margin: 0 auto;
   }
-  
-  
-  header {
-	   /*text-align: center;
-	   background-color: rgba(26, 165, 131, 0.75);
-	   padding: 4em 0;*/
-  }
-  
-  .article-heading:before {
-	  content: "";
-	  position: absolute;
-	  position: relative;
-	  z-index: -1; /* behind parent */
-	  top: 0;
-	  bottom: 0;
-	  /* subtract h2 padding (1.5rem) */
-	  left: 598.5rem;
-	  right: 598.5rem;
-	  background: green;
-  }
+
   
   .article-heading {
 	  text-align: center;
