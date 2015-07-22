@@ -1,6 +1,5 @@
 /* ACCESSIBILITY ANALYTICS - Developed by Mikal Morello and Ramiro Oliva */
 
-
 /* GENERAL */
 
   html, body {
@@ -13,10 +12,18 @@
 	   font-family: "Georgia W01 Regular";
 	   color: #444;
 	   padding: 0 0 50px;
-	   background-image: url("../media/invisible-ink.jpg");
-	   background-repeat: no-repeat;
-	   background-position: -650px 0%; 
+	   background: /*linear-gradient(rgba(26, 165, 131, 0.75),rgba(26, 165, 131, 0.75)) no-repeat 100% -90%,*/
+	    url("../media/invisible-ink.jpg") no-repeat -650px 0;
+	   left: 0;
+	   margin: 0;
+	   overflow: hidden;
+	   position: relative;
   }
+ 
+ body::before {
+	  
+	 background:
+ }
   
   p {
 	   font-size: 1.25em;
@@ -86,14 +93,15 @@
 
 /* LAYOUT */
 
-  section.main {
+  section .container {
 	   width: 72.92%;
+	   margin: 0 auto;
   }
   
-  article.main {
+  article .container {
 	   width: 67.321%;
-	   /*width: 100%;
-	   padding: auto 16.3395%;*/
+	   margin: 0 auto;
+	  
   }
   
   article {
@@ -102,6 +110,11 @@
   
   section {
 	   margin: 0 auto;
+  }
+  
+  section.article-heading.main {
+	   width: 100%;
+	  box-sizing: border-box;
   }
   
   header {
@@ -113,6 +126,7 @@
   .article-heading:before {
 	  content: "";
 	  position: absolute;
+	  position: relative;
 	  z-index: -1; /* behind parent */
 	  top: 0;
 	  bottom: 0;
@@ -391,7 +405,17 @@
   }
 
 
+/* MENU */
 
+	nav {
+	  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+	  left: -285px;  /* start off behind the scenes */
+	  height: 100%;
+	  position: fixed;
+	  width: 285px;
+	}
+	
+	
 /* ACCESSIBILITY */
 
   .skip {
