@@ -112,10 +112,6 @@
 	   margin: 0 auto;
   }
   
-  section.article-heading.main {
-	   width: 100%;
-	  box-sizing: border-box;
-  }
   
   header {
 	   /*text-align: center;
@@ -141,6 +137,10 @@
 	  background-color: rgba(26, 165, 131, 0.75);
 	  padding: 4em 13.54%;
 	  position: relative;
+  }
+  
+  .navigation {
+	  background-color: rgba(26, 165, 131, 0.75);
   }
 
 
