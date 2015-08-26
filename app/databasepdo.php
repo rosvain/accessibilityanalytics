@@ -55,3 +55,6 @@ try {
     echo $ex->getMessage();
     die();
 }
+
+
+$db = NULL;
