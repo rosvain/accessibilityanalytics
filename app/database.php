@@ -1,10 +1,13 @@
 <?php
-class MyDB extends SQLite3 {
+namespace vendor\accessanalytics;
 
-    function __construct() {
+class MyDB extends SQLite3
+{
+
+    public function __construct()
+    {
         $this->open('../data/analytics.db');
     }
-
 }
 
 $db = new MyDB();

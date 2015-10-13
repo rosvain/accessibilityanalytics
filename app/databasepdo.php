@@ -1,5 +1,4 @@
 <?php
-
 //remove before production
 ini_set('display_errors', 'on');
 
@@ -48,13 +47,12 @@ try {
     $insert = $db->prepare("INSERT INTO user (ip,session) VALUES (:ip,:session)");
     $insert->bindParam(':ip', $ip);
     $insert->bindParam(':session', $session);
-    $ip = '888.888.888';
+    $ip = '8999.88.888';
     $session = 'narutonarutonaruto';
     $insert->execute();
 } catch (Exception $ex) {
     echo $ex->getMessage();
     die();
 }
-
-
-$db = NULL;
+//closing connection
+$db = null;
