@@ -1,7 +1,5 @@
 <?php
-// include classes or rely on Composer autoloader
-require_once 'pua/lib/phpUserAgent.php';
-require_once 'pua/lib/phpUserAgentStringParser.php';
+require_once '../vendor/autoload.php';
 
 // Create a user agent
 $userAgent = new phpUserAgent();
