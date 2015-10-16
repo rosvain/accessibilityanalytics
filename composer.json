@@ -1,6 +1,5 @@
 {
     "require": {
-        "slim/slim": "^2.6",
         "ua-parser/uap-php": "^3.4",
         "squizlabs/php_codesniffer": "^2.3",
         "ornicar/php-user-agent": "^1.0"
