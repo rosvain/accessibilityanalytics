@@ -2,7 +2,7 @@
 require_once '../vendor/autoload.php';
 use UAParser\Parser;
 
-$ua = "Mozilla/5.0 (Macintosh; Intel Ma...";
+$ua = "";
 
 $parser = Parser::create();
 $result = $parser->parse($ua);

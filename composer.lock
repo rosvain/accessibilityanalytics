@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1f57ab721bd75cf61a3a5802e51389c1",
-    "content-hash": "ccda669433708bdabcdad24be1283ae8",
+    "hash": "79057b5ae36e688e01ddb57fc11265e8",
+    "content-hash": "11457bab651b3fa7cad9f2acc52733b4",
     "packages": [
         {
             "name": "ornicar/php-user-agent",
